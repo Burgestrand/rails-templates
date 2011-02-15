@@ -57,6 +57,10 @@ class AppBuilder < Rails::AppBuilder
     end
   end
   
+  def gitignore
+    get github['gitignore'], '.gitignore'
+  end
+  
   protected
     def github
       @__github__ ||= Hash.new { |h, (k, v)| h[k] = "https://github.com/Burgestrand/rails-templates/raw/master/slim/template/#{k}" }

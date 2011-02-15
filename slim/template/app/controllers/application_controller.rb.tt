@@ -1,0 +1,8 @@
+class ApplicationController < ActionController::Base
+  protect_from_forgery
+  
+  # Used by Rails to determine if this is a local request or not.
+  def local_request?
+    ! Rails.env.production?
+  end
+end

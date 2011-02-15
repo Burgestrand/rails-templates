@@ -1,0 +1,7 @@
+!.(gitignore|gitkeep)
+.DS_Store
+thumbs.db
+.bundle
+db/*.sqlite3
+log/
+tmp/

@@ -1,0 +1,3 @@
+<%= app_const %>.routes.draw do
+  
+end

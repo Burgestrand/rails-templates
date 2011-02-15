@@ -19,7 +19,5 @@
     <![endif]-->
   </head>
   <body lang="en">
-
-  <%%= javascript_include_tag :defaults %>
   </body>
 </html>

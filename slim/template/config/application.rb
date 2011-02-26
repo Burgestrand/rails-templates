@@ -16,7 +16,7 @@ module <%= app_const_base %>
     end
     
     config.secret_token = '<%= app_secret %>'
-    config.cache_store :file_store
+    config.cache_store  = :file_store
     config.session_store :cookie_store, :key => '_<%= app_name %>_session'
     
     config.whiny_nils = true
